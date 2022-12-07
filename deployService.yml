@@ -1,13 +1,13 @@
 version: '3.1'
 
 services:
-  establishment-service:
+  product-service:
     image: product-service:v1
-    container_name: establishment-service
+    container_name: product-service
     build:
       context: src
       args:
-        - JAR_FILE=product-service.jar
+        - JAR_FILE=productService.jar
     deploy:
       resources:
         limits:
